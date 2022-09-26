@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#D8F3DC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Your"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#1F587E"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGE"
+        android:layout_gravity="center"
+        android:background="#1F587E"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Minute"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#1F587E"
+        android:textStyle="bold"/>
+
+<!--    button for select date-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Select Date"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+        android:id="@+id/btn_date"/>
+
+<!--    your selected date-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Date"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/tv_selected"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Date"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="#918F8F"/>
+
+<!-- textview of convert into minute-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00000000"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#1F587E"
+        android:textStyle="bold"
+        android:id="@+id/tv_minute"/>
+
+
+</LinearLayout>
