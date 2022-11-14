@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionActivity1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            tools:text="Which country's flag is this ?"
+            android:id="@+id/tv_question"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:contentDescription="quiz image"
+            android:src="@drawable/ic_flag_of_india"
+            android:id="@+id/iv_flag"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:textSize="15sp">
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="false"
+                android:id="@+id/progress_bar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                tools:text="0/10"
+                android:id="@+id/tv_progress"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Apple"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:background="@drawable/option_border"
+            android:id="@+id/op_one_tv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Apple"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:background="@drawable/option_border"
+            android:id="@+id/op_two_tv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Apple"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:background="@drawable/option_border"
+            android:id="@+id/op_three_tv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Apple"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:background="@drawable/option_border"
+            android:id="@+id/op_four_tv"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:background="@color/purple_700"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:id="@+id/btn_submit"/>
+
+    </LinearLayout>
+
+</ScrollView>
