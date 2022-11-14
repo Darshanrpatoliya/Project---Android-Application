@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionActivity2"
+    android:background="@mipmap/bg1"
+    android:layout_gravity="center"
+    android:padding="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cm1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/btn_blur_bg"
+            android:text="Chairman"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:id="@+id/btn_jump_cm"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gm"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/btn_blur_bg"
+            android:text="Society Member"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:id="@+id/btn_jump_sm"/>
+    </LinearLayout>
+
+</FrameLayout>

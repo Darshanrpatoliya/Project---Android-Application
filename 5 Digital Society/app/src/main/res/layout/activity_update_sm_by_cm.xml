@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateSmByCmActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/bg1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Socity Member Details"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Update"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please ReEnter Members Updated Details"
+                            android:textSize="15sp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textColor="#AD000000"
+                            android:gravity="center"
+                            android:id="@+id/tv_sm_error"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginTop="15dp">
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ed_updt_sm_fname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="20dp"
+                                android:hint="First Name"
+                                android:drawableLeft="@drawable/ic_baseline_person_24"
+                                android:inputType="text"
+                                android:textColor="#061529"
+                                android:textColorHint="#A5A0A0" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginTop="15dp">
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ed_updt_sm_lname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="20dp"
+                                android:hint="Last Name"
+                                android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                                android:inputType="text"
+                                android:textColor="#061529"
+                                android:textColorHint="#A5A0A0" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginTop="15dp">
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ed_updt_sm_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="20dp"
+                                android:hint="Email"
+                                android:drawableLeft="@drawable/ic_baseline_email_24"
+                                android:inputType="textWebEmailAddress"
+                                android:textColor="#061529"
+                                android:textColorHint="#A5A0A0" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginTop="15dp">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ed_updt_mo_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                                android:drawablePadding="20dp"
+                                android:hint="Mobile No."
+                                android:inputType="phone"
+                                android:textColor="#061529"
+                                android:textColorHint="#A5A0A0" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginTop="15dp">
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ed_updt_fam_member"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="20dp"
+                                android:hint="Family Member"
+                                android:drawableLeft="@drawable/ic_baseline_people_24"
+                                android:inputType="number"
+                                android:textColor="#061529"
+                                android:textColorHint="#A5A0A0" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginTop="15dp">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ed_updt_occupation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_baseline_work_24"
+                                android:drawablePadding="20dp"
+                                android:hint="Occupation"
+                                android:inputType="text"
+                                android:textColor="#061529"
+                                android:textColorHint="#A5A0A0" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginTop="15dp">
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ed_updt_flate_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="20dp"
+                                android:hint="House No."
+                                android:drawableLeft="@drawable/ic_baseline_house_24"
+                                android:inputType="number"
+                                android:textColor="#061529"
+                                android:textColorHint="#A5A0A0" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/purple_700"
+                            android:layout_marginTop="10dp"
+                            android:text="Update Details"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/btn_updt_update"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

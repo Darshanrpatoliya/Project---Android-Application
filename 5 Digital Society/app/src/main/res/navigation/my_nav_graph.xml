@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.digitalsociety.chairman.fragmentall.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/requestYesFragment"
+        android:name="com.example.digitalsociety.chairman.fragmentall.request.RequestYesFragment"
+        android:label="Confirm Request"
+        tools:layout="@layout/fragment_request_yes" />
+    <fragment
+        android:id="@+id/allShowMembersFragment"
+        android:name="com.example.digitalsociety.chairman.fragmentall.allshow.AllShowMembersFragment"
+        android:label="All Members"
+        tools:layout="@layout/fragment_all_show_members" />
+    <fragment
+        android:id="@+id/logOutFragment"
+        android:name="com.example.digitalsociety.chairman.fragmentall.logout.LogOutFragment"
+        android:label="Log out...."
+        tools:layout="@layout/fragment_log_out" />
+</navigation>
